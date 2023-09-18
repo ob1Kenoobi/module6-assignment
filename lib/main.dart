@@ -26,10 +26,10 @@ class PhotoGalleryScreen extends StatelessWidget {
   final List<String> imageUrls = [
     //image URLs
     'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
-    'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
-    'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
-    'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
-    'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
+    //'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
+    //'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
+    //'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
+    //'https://www.cat-lovers-only.com/images/tiger-tabby-face-488.jpg',
     'https://images.unsplash.com/photo-1615796153287-98eacf0abb13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
     'https://images.unsplash.com/photo-1571988840298-3b5301d5109b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
     'https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
@@ -38,7 +38,7 @@ class PhotoGalleryScreen extends StatelessWidget {
   ];
 
   String generateCaption(int index) {
-    return "Caption ${index}";
+    return "Photo ${index}";
   }
 
   void showSnackbar(BuildContext context, String message) {
@@ -111,7 +111,7 @@ class PhotoGalleryScreen extends StatelessWidget {
               );
             },
           ),
-          SizedBox(height: 16.0),
+          SizedBox(height: 24.0),
 
           // Feature 5: Sample Photos with Titles and Subtitles using ListTile with CircleAvatar and ListView.builder
           ListView.builder(
